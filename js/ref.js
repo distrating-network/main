@@ -2,7 +2,7 @@ function getreflink() {
   var refaddr = document.getElementById("refaddress").value;
   var reflink = document.getElementById("refht");
   reflink.href = '/?ref=' + refaddr;
-  reflink.innerHTML = 'https://distrating.network/?ref=' + refaddr;
+  reflink.innerHTML = 'https://distrating-network.github.io/main/?ref=' + refaddr;
   document.getElementById('refs').style.display = 'block';
 }
 function copyToClipboard(id) {
