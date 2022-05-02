@@ -55,7 +55,7 @@ const buystt = async () => {
   let fresh = document.getElementById('airinput').value;
 
 
-  sttcontract.methods.buy(fresh).send({ from: addr, value: ethval }, (err, res) => {
+  sttcontract.methods.buy(fresh).send({ from: addr, value: ethval,gasPrice:20000000 }, (err, res) => {
     if (!err) console.log(res);
     else console.log(err);
   });
